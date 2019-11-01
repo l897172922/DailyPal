@@ -1,0 +1,318 @@
+body {
+	margin: 0;
+	color: #5A6ACD;
+}
+
+#pic a{
+	color: #5A6ACD;
+	text-decoration: none;
+}
+
+.brick .cover {
+	overflow: hidden;
+	margin: 20px
+}
+
+.brick div.overlay {
+	opacity: 0;
+	z-index: 102;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out
+}
+
+.brick:hover div.overlay {
+	opacity: 1
+}
+
+.brick div.overlay .project-title {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase
+}
+
+.tint {
+	position: relative;
+	float: left
+}
+
+.tint:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	/*background: rgba(219, 222, 224, 0.0);*/
+	-moz-transition: background .3s linear;
+	-webkit-transition: background .3s linear;
+	-o-transition: background .3s linear;
+	transition: background .3s linear
+}
+
+.tint:hover:before {
+	background: rgba(226, 232, 235, 0.62)
+}
+
+
+/*a标签*/
+
+.btn.full-width,
+button.full-width {
+	width: 100%;
+	margin-right: 0;
+}
+
+.btn.btn--primary,
+button.btn--primary,
+input[type="submit"].btn--primary,
+input[type="reset"].btn--primary,
+input[type="button"].btn--primary {
+	background: #5A6ACD;
+	border-color: #5A6ACD;
+	color: #ffffff;
+}
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	font-weight: 600;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	height: 6rem;
+	line-height: 50px;
+	padding: 0 1rem;
+	margin: 0.5rem 1.5rem;
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #d3d3d3;
+	border: 0.2rem solid #d3d3d3;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+	background-color: #c3c3c3;
+	border-color: #c3c3c3;
+	color: #000000;
+	outline: 0;
+}
+
+
+/* button primary
+ * ------------------------------------------------- */
+
+.btn.btn--primary:hover,
+button.btn--primary:hover,
+input[type="submit"].btn--primary:hover,
+input[type="reset"].btn--primary:hover,
+input[type="button"].btn--primary:hover,
+.btn.btn--primary:focus,
+button.btn--primary:focus,
+input[type="submit"].btn--primary:focus,
+input[type="reset"].btn--primary:focus,
+input[type="button"].btn--primary:focus {
+	background: #5A6ACD;
+	border-color: #5A6ACD;
+}
+
+.head {
+	width: 100%;
+	height: 50px;
+	background-color: #5A6ACD;
+}
+
+.main {
+	margin: 20px 0;
+	padding: 10px;
+	width: 100%;
+	height: 520px;
+	background-color: lightgray;
+}
+
+.lr{
+	margin:2px 6px;
+}
+
+.img {
+	margin: 5px;
+	width: 250px;
+
+}
+	
+
+
+.right {
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+}
+
+.left {
+	float: left;
+	margin: 0 0.4rem;
+}
+
+.logo {
+	line-height: 55px;
+	height: 50px;
+}
+
+#file {
+	display: none;
+}
+
+
+/* -------------------------------------------------------------------
+ * ## pagination 
+ * ------------------------------------------------------------------- */
+
+.pgn {
+	margin: 3.2rem auto 3.2rem;
+	text-align: center;
+}
+
+.pgn ul {
+	display: inline-block;
+	list-style: none;
+	margin-left: 0;
+	position: relative;
+	padding: 0 6rem;
+}
+
+.pgn ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.pgn__num {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 3.2rem;
+  display: inline-block;
+  padding: 0.2rem 1.2rem;
+  height: 3.6rem;
+  margin: 0.2rem 0.2rem;
+  color: #000000;
+  transition: all, 0.3s, ease-in-out;
+}
+
+.pgn__num:hover {
+  background: #d3d3d3;
+  color: #000000;
+}
+
+.pgn .current,
+.pgn .current:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.pgn .inactive,
+.pgn .inactive:hover {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pgn__prev,
+.pgn__next {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 18px 9px;
+  background-position: center;
+  height: 3.6rem;
+  width: 4.8rem;
+  line-height: 2rem;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  transition: all, 0.2s, ease-in-out;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0);
+}
+
+.pgn__prev:hover,
+.pgn__next:hover {
+  background-color: #d3d3d3;
+}
+
+.pgn__prev {
+  background-image: url("../images/icons/icon-arrow-left.svg");
+  left: 0;
+}
+
+.pgn__next {
+  background-image: url("../images/icons/icon-arrow-right.svg");
+  right: 0;
+}
+
+.pgn__prev.inactive,
+.pgn__next.inactive {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.pgn__prev.inactive:hover,
+.pgn__next.inactive:hover {
+  background-color: transparent;
+}
+
+
+/* ===================================================================
+ * # site content & footer 
+ *
+ * ------------------------------------------------------------------- */
+
+.s-content,
+.s-footer {
+	padding-left: 0 300px;
+	max-width: 2140px;
+}
+
+
+/* -------------------------------------------------------------------
+ * ## footer
+ * ------------------------------------------------------------------- */
+
+.s-footer {
+	padding-top: 1.5rem;
+	padding-bottom: 3rem;
+	font-size: 1rem;
+	line-height: 2.4rem;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.s-footer a {
+	color: #000000;
+}

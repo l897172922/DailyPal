@@ -1,0 +1,95 @@
+.inp {
+	margin: 0;
+	padding: 0;
+	width: 78%;
+	/*float: left;*/
+}
+.inp-tow{
+	margin: 0;
+	padding: 0;
+	width: 40%;
+}
+
+#leftc p {
+	margin-top: 23px;
+	margin-bottom: 10px;
+	float: left;
+	width: 60px;
+}
+#leftc div{
+	height: 80px;
+}
+
+select {
+	float: left;
+	margin: 0;
+	width: 90px;
+}
+
+.areat {
+	width: 100%;
+	min-height: 10rem;
+	margin-right: 0px;
+}
+
+.ptop {
+	margin: 0;
+}
+
+#like input {
+	margin: 5px;
+	float: left;
+}
+
+#home p{
+	margin: 20px;
+	width: 30px;
+	line-height: 40px;
+}
+select{
+	float: left;
+	width: 120px;
+}
+#like label{
+	width: 80px;
+	margin: 0;
+	font-size: 16px;
+	color: grey;
+}
+#like div{
+	float: left;
+	width: 100px;
+	margin: 10px 30px 20px 0;
+}
+
+#m{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+/*头像上传*/
+
+#head-l{
+	position: relative;
+	width:100px;
+	margin: auto;
+	margin-top: 10px;
+	
+}
+#inpt{
+	position: absolute;
+	left: 0;
+	top: 0;
+ 	display:none; 
+	width: 100px;
+	height: 30px;
+	margin: 0;
+	text-align: center;
+}
+#head-b{
+	margin: 0;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+}
+

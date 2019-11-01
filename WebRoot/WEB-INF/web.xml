@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>DailyPal</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<!-- 管理员的servlet -->
+	<servlet>
+		<servlet-name>ManagerServlet</servlet-name>
+		<servlet-class>com.pal.controller.ManagerServlet</servlet-class>
+	</servlet>
+	<!-- 用户servlet -->
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.pal.controller.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MyCenterServlet</servlet-name>
+		<servlet-class>com.pal.controller.MyCenterServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>PlazaServlet</servlet-name>
+  <servlet-class>com.pal.controller.PlazaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PictureServlet</servlet-name>
+    <servlet-class>com.pal.controller.PictureServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PhotoServlet</servlet-name>
+    <servlet-class>com.pal.controller.PhotoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>com.pal.controller.IndexServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BoardServlet</servlet-name>
+    <servlet-class>com.pal.controller.BoardServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyDynamicServlet</servlet-name>
+    <servlet-class>com.pal.controller.MyDynamicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailsServlet</servlet-name>   
+    <servlet-class>com.pal.controller.DetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FriendListServlet</servlet-name>
+    <servlet-class>com.pal.controller.FriendListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ChatServlet</servlet-name>
+    <servlet-class>com.pal.controller.ChatServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FriendSsircleServlet</servlet-name>
+
+    <servlet-class>com.pal.controller.FriendSsircleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindServlet</servlet-name>
+    <servlet-class>com.pal.controller.FindServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>ManagerServlet</servlet-name>
+		<url-pattern>/manage/ManagerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/front/UserServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyCenterServlet</servlet-name>
+		<url-pattern>/front/MyCenterServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlazaServlet</servlet-name>
+    <url-pattern>/front/PlazaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PictureServlet</servlet-name>
+    <url-pattern>/front/PictureServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotoServlet</servlet-name>
+    <url-pattern>/front/PhotoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/front/IndexServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BoardServlet</servlet-name>
+    <url-pattern>/front/BoardServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyDynamicServlet</servlet-name>
+    <url-pattern>/front/MyDynamicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailsServlet</servlet-name>
+    <url-pattern>/front/DetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FriendListServlet</servlet-name>
+    <url-pattern>/front/FriendListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChatServlet</servlet-name>
+    <url-pattern>/front/ChatServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FriendSsircleServlet</servlet-name>
+    <url-pattern>/front/FriendSsircleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindServlet</servlet-name>
+    <url-pattern>/front/FindServlet</url-pattern>
+  </servlet-mapping>
+
+
+
+	<!-- 编码设置 -->
+	<context-param>
+		<param-name>encode</param-name>
+		<param-value>utf-8</param-value>
+	</context-param>
+	<filter>
+		<filter-name>encodefilter</filter-name>
+		<filter-class>com.pal.filter.EncodeFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encodefilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<!-- FORWARD:请求转发 -->
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>REQUEST</dispatcher>
+	</filter-mapping>
+
+
+
+	<!-- 用户验证过滤器 -->
+	<!-- <filter>
+	<filter-name>loginfilter</filter-name>
+	<filter-class>com.pal.filter.LoginFilter</filter-class> 
+	</filter>
+	
+	<filter-mapping>
+	<filter-name>loginfilter</filter-name>
+	<url-pattern>/*</url-pattern> 
+	</filter-mapping> -->
+
+
+	<!-- 设置用户长时间未访问服务器，超过了会话最大超时时间，服务器就会自动销毁超时的session -->
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<!-- 统计在线人数的监听器配置 -->
+	<listener>
+		<listener-class>com.pal.listener.OnlineCountListener</listener-class>
+	</listener> 
+	
+	<listener>
+		<listener-class>com.pal.listener.OnlineCounterListener</listener-class>
+	</listener>
+	
+	
+	
+	
+	
+
+
+</web-app>

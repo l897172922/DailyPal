@@ -1,0 +1,16 @@
+.f-head {
+width: 50px;
+height: 50px;
+}
+#list tr td{
+height: 60px;
+padding: 5px;
+}
+
+.f-sig{
+	font-size: 10px;
+	color: gray;
+}
+.f-send{
+	margin: 0;
+}

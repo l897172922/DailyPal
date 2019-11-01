@@ -1,0 +1,88 @@
+select {
+	float: left;
+	margin: 0;
+	width: 90px;
+}
+
+.divwidth {
+	width: 94%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+#sampleInput {
+	width: 75%;
+	float: left;
+}
+
+.sub-find {
+	width: 20%;
+	margin-left: 2%;
+}
+
+.lab-1 {
+	width: 80px;
+	float: left;
+	line-height: 85px;
+	margin: 0;
+	text-align: center;
+}
+
+#sub {
+	width: 20%;
+	margin: 2%;
+	margin-top: 0;
+}
+
+.result {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.u-out{
+	width: 25%;
+	height: 200px;
+	float: left;
+}
+
+.u-img{
+	width: 70px;
+	float: left;
+}
+.u-in{
+	padding: 20px;
+}
+
+.u-word{
+	height: 70px;
+	width: 90px;
+	margin: 0;
+	margin-left: 10px;
+	margin-top: 5px;
+	line-height: 70px;
+	float: left;
+}
+
+
+.u-nick{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	width: 80px;
+	margin: 0;
+}
+.u-age{
+	font-size: 10px;
+	color: gray;
+	margin: 0;
+	width: 80px;
+}
+
+
+.u-btn{
+	width: 20px;
+	padding: 5px;
+	font-size: 10px;
+}
+.u-add{
+	margin:0;
+	line-height: 70px;
+}

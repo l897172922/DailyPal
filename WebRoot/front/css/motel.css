@@ -1,0 +1,21 @@
+.m-head{
+	height: 40px;
+}
+.m-x{
+	float: right;
+	width: 20px;
+	padding: 1rem 0;
+}
+
+
+.m-sub{
+	height: 30px;
+}
+.m-n{
+	font-size: 15px;
+	font-weight:bold;
+}
+.m-inp{
+	width: 100%;
+	margin: 0;
+}

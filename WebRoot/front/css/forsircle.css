@@ -1,0 +1,50 @@
+.r-name{
+	margin: 10px;
+}
+.r-aside{
+	padding-top:10px ;
+	padding-bottom: 10px;
+}
+.r-block{
+background-color: #efefef;
+  height: 175px;
+  border: none;
+  margin: 0;
+  padding:20px;
+  position: relative;
+}
+
+.r-block:before {
+  display: block;
+
+  background-repeat: no-repeat;
+  background: center center;
+  background-size: contain;
+  background-image: url(../images/icons/icon-quote.svg);
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.r-img{
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+}
+
+div cite:before{
+	color: gray;
+	content: "\2014 \0020";
+}
+div cite{
+	color: gray;
+	font-size: 13px;
+}
+.r-cent{
+	font-size: 14px;
+	height: 16px;
+}
+.r-like{
+	float: right;
+}
